@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Credit Risk Modeling</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+  <h1>Credit Risk Modeling</h1>
+  <form action="/submit" method="post">
+    <h3>Numeric Attributes:</h3>
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" required><br>
+    
+    <label for="duration">Duration:</label>
+    <input type="number" id="duration" name="duration" required><br>
+    
+    <label for="installment_rate">Installment Rate:</label>
+    <input type="number" id="installment_rate" name="installment_rate" required><br>
+    
+    <label for="residence_since">Residence Since:</label>
+    <input type="number" id="residence_since" name="residence_since" required><br>
+    
+    <label for="existing_credits">Existing Credits:</label>
+    <input type="number" id="existing_credits" name="existing_credits" required><br>
+    
+    <label for="credit_amount">Credit Amount:</label>
+    <input type="number" id="credit_amount" name="credit_amount" required><br>
+    
+    <h3>Categorical Attributes:</h3>
+    <label for="existing_checkout">Existing Checkout:</label>
+    <select id="existing_checkout" name="existing_checkout" required>
+      <option value="">Select an option</option>
+      <option value="option1">Option 1</option>
+      <option value="option2">Option 2</option>
+      <option value="option3">Option 3</option>
+    </select><br>
+    
+    <label for="credit_history">Credit History:</label>
+    <select id="credit_history" name="credit_history" required>
+      <option value="">Select an option</option>
+      <option value="option1">Option 1</option>
+      <option value="option2">Option 2</option>
+      <option value="option3">Option 3</option>
+    </select><br>
+    
+    <label for="purpose">Purpose:</label>
+    <select id="purpose" name="purpose" required>
+      <option value="">Select an option</option>
+      <option value="option1">Option 1</option>
+      <option value="option2">Option 2</option>
+      <option value="option3">Option 3</option>
+    </select><br>
+    
+    <label for="savings_acc">Savings Account:</label>
+    <select id="savings_acc" name="savings_acc" required>
+      <option value="">Select an option</option>
+      <option value="option1">Option 1</option>
+      <option value="option2">Option 2</option>
+      <option value="option3">Option 3</option>
+    </select><br>
+    
+    <label for="emp_duration">Employment Duration:</label>
+    <select id="emp_duration" name="emp_duration" required>
+      <option value="">Select an option</option>
+      <option value="option1">Option 1</option>
+      <option value="option2">Option 2</option>
+      <option value="option3">Option 3</option>
+    </select><br>
+    
+    <label for="sex_status">Sex/Status:</label>
+    <select id="sex_status" name="sex_status" required>
+      <option value="">Select an option</option>
+      <option value="option1">Option 1</option>
+      <option value="option2">Option 2</option>
+      <option value="option3">Option 3</option>
+    </select><br>
+    
+    <label for="property">Property:</label>
+    <select id="property" name="property" required>
+      <option value="">Select an option</option>
+      <option value="option1">Option 1</option>
+      <option value="option2">Option 2</option>
+      <option value="option3">Option 3</option>
+    </select><br>
+    
+    <label for="installment_plan">Installment Plan:</label>
+    <select id="installment_plan" name="installment_plan" required>
+      <option value="">Select an option</option>
+      <option value="option1">Option 1</option>
+      <option value="option2">Option 2</option>
+      <option value="option3">Option 3</option>
+    </select><br>
+    
+    <label for="housing">Housing:</label>
+    <select id="housing" name="housing" required>
+      <option value="">Select an option</option>
+      <option value="option1">Option 1</option>
+      <option value="option2">Option 2</option>
+      <option value="option3">Option 3</option>
+    </select><br>
+    
+    <label for="foreign_worker">Foreign Worker:</label>
+    <select id="foreign_worker" name="foreign_worker" required>
+      <option value="">Select an option</option>
+      <option value="option1">Option 1</option>
+      <option value="option2">Option 2</option>
+      <option value="option3">Option 3</option>
+    </select><br>
+
+    <input type="submit" value="Submit">
+  </form>
+  
+  <h2>Loan Approval Result:</h2>
+  <div id="result"></div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
